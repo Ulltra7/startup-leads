@@ -1,0 +1,17 @@
+{
+  "name": "startup-leads",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "scrape": "npx ts-node scrapers/startupticker.ts",
+    "pipeline": "npx ts-node scripts/daily-pipeline.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "dotenv": "^16.5.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
